@@ -13,7 +13,7 @@ with st.sidebar:
     selected = option_menu("Smart Health Predictor",
                            ['Diabetes Prediction', 'Heart Disease Prediction', 'Parkinson Prediction'],
                            icons=['heart', 'activity', 'person'],
-                           default_index=0
+                           default_index=1
                            )
     
 if (selected == 'Heart Disease Prediction'):
@@ -250,5 +250,6 @@ elif (selected == 'Parkinson Prediction'):
             parkinsons_diagnosis = "The person has Parkinson's disease"
         else:
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
+
 
     st.success(parkinsons_diagnosis)

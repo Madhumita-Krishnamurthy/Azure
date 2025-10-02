@@ -13,7 +13,7 @@ with st.sidebar:
     selected = option_menu("Smart Health Predictor",
                            ['Diabetes Prediction', 'Heart Disease Prediction', 'Parkinson Prediction'],
                            icons=['heart', 'activity', 'person'],
-                           default_index=1
+                           default_index=0
                            )
     
 if (selected == 'Heart Disease Prediction'):
@@ -253,3 +253,4 @@ elif (selected == 'Parkinson Prediction'):
 
 
     st.success(parkinsons_diagnosis)
+
